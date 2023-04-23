@@ -18,19 +18,17 @@ struct ContentView: View {
         VStack {
             VStack {
                 Button("Select .deb file") {
-                    showingSheet = true
+                    showingSheet.toggle()
                 }
                 .buttonStyle(TintedButton(color: .white, fullwidth: true))
                 
-                if selectedFile?.description.isEmpty == true {
-                    Button("Convert .deb") {
-                        if let debURL = selectedFile {
-                            outputAux = repackDeb(scriptPath: scriptPath, debURL: debURL)
-                            UIApplication.shared.alert(title: "Converting...", body: outputAux, withButton: !outputAux.isEmpty)
-                        }
+                Button("Convert .deb") {
+                    if let debURL = selectedFile {
+                        outputAux = repackDeb(scriptPath: scriptPath, debURL: debURL)
+                        UIApplication.shared.alert(title: "Converting...", body: outputAux, withButton: !outputAux.isEmpty)
                     }
-                    .buttonStyle(TintedButton(color: .white, fullwidth: true))
                 }
+                .buttonStyle(TintedButton(color: .white, fullwidth: true))
                 
                 Text("Derootifier by haxi0 with help of evelyn, inactive and Nightwind. Made with ♡")
                     .foregroundColor(.white.opacity(0.5))
