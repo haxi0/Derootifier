@@ -37,7 +37,7 @@ struct DocumentPicker: UIViewControllerRepresentable {
             
             guard fileManager.fileExists(atPath: selectedFileURL.path) else { return }
             
-            let destFolderURL = URL(fileURLWithPath: "/var/jb/var/mobile/.Derootifier")
+            let destFolderURL = URL(fileURLWithPath: "/var/mobile/.Derootifier")
             
             do {
                 try fileManager.createDirectory(at: destFolderURL, withIntermediateDirectories: true, attributes: nil)

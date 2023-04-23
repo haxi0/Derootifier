@@ -6,48 +6,66 @@
 //
 
 import SwiftUI
-import AuxiliaryExecute
+import FluidGradient
 
 struct ContentView: View {
     let scriptPath = Bundle.main.path(forResource: "repack-rootless", ofType: "sh")!
+    @AppStorage("firstLaunch") private var firstLaunch = true
     @State private var showingSheet = false
     @State private var selectedFile: URL?
     @State private var outputAux = ""
     
     var body: some View {
-        VStack {
-            VStack {
+        NavigationView {
+            VStack(spacing: 10) {
                 Button("Select .deb file") {
                     showingSheet.toggle()
                 }
                 .buttonStyle(TintedButton(color: .white, fullwidth: true))
                 
-                Button("Convert .deb") {
-                    if let debURL = selectedFile {
-                        outputAux = repackDeb(scriptPath: scriptPath, debURL: debURL)
+                if let selectedFile = selectedFile {
+                    Button("Convert .deb") {
+                        outputAux = repackDeb(scriptPath: scriptPath, debURL: selectedFile)
                         UIApplication.shared.alert(title: "Converting...", body: outputAux, withButton: !outputAux.isEmpty)
                     }
+                    .buttonStyle(TintedButton(color: .white, fullwidth: true))
                 }
-                .buttonStyle(TintedButton(color: .white, fullwidth: true))
                 
-                Text("Derootifier by haxi0 with help of evelyn, inactive and Nightwind. Made with ♡")
-                    .foregroundColor(.white.opacity(0.5))
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 12))
+                NavigationLink(
+                    destination: CreditsView(),
+                    label: {
+                        HStack {
+                            Text("Credits")
+                            Image(systemName: "chevron.right")
+                        }
+                        .foregroundColor(.white.opacity(0.5))
+                        .font(.system(size: 15))
+                    }
+                )
+                .padding()
             }
             .padding()
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(GradientView())
-        .ignoresSafeArea()
-        .onAppear {
-            UIApplication.shared.alert(title: "Warning", body: "Please make sure the following packages are installed: dpkg-deb, file, fakeroot, odcctools, ldid (from Procursus).")
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background (
+                FluidGradient(blobs: [.green, .mint],
+                              highlights: [.green, .mint],
+                              speed: 0.5,
+                              blur: 0.80)
+                .background(.green)
+            )
+            .ignoresSafeArea()
+            .onAppear {
+                if firstLaunch {
+                    UIApplication.shared.alert(title: "Warning", body: "Please make sure the following packages are installed: dpkg-deb, file, fakeroot, odcctools, ldid (from Procursus).")
+                    firstLaunch = false
+                }
 #if !targetEnvironment(simulator)
-            folderCheck()
+                folderCheck()
 #endif
-        }
-        .sheet(isPresented: $showingSheet) {
-            DocumentPicker(selectedFile: $selectedFile)
+            }
+            .sheet(isPresented: $showingSheet) {
+                DocumentPicker(selectedFile: $selectedFile)
+            }
         }
     }
 }
