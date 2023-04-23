@@ -18,9 +18,7 @@ struct DocumentPicker: UIViewControllerRepresentable {
         return picker
     }
     
-    func updateUIViewController(_ uiViewController: UIDocumentPickerViewController, context: Context) {
-        
-    }
+    func updateUIViewController(_ uiViewController: UIDocumentPickerViewController, context: Context) {}
     
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
@@ -34,36 +32,32 @@ struct DocumentPicker: UIViewControllerRepresentable {
         }
         
         func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
-            if let selectedFileURL = urls.first {
-                let fileManager = FileManager.default
-                let selectedFilePath = selectedFileURL.path
-                
-                if fileManager.fileExists(atPath: selectedFilePath) {
-                    let destFolderURL = URL(fileURLWithPath: "/var/jb/var/mobile/.Derootifier")
-                    
-                    if !fileManager.fileExists(atPath: destFolderURL.path) {
-                        do {
-                            try fileManager.createDirectory(at: destFolderURL, withIntermediateDirectories: true, attributes: nil)
-                        } catch {
-                            print(error.localizedDescription)
-                            return
-                        }
-                    }
-                    
-                    let destFileURL = destFolderURL.appendingPathComponent(selectedFileURL.lastPathComponent)
-                    
-                    do {
-                        if fileManager.fileExists(atPath: destFileURL.path) {
-                            try fileManager.removeItem(at: destFileURL)
-                        }
-                        
-                        try fileManager.copyItem(at: selectedFileURL, to: destFileURL)
-                        
-                        parent.selectedFile = destFileURL
-                    } catch {
-                        print(error.localizedDescription)
-                    }
+            guard let selectedFileURL = urls.first else { return }
+            let fileManager = FileManager.default
+            
+            guard fileManager.fileExists(atPath: selectedFileURL.path) else { return }
+            
+            let destFolderURL = URL(fileURLWithPath: "/var/jb/var/mobile/.Derootifier")
+            
+            do {
+                try fileManager.createDirectory(at: destFolderURL, withIntermediateDirectories: true, attributes: nil)
+            } catch {
+                print(error.localizedDescription)
+                return
+            }
+            
+            let destFileURL = destFolderURL.appendingPathComponent(selectedFileURL.lastPathComponent)
+            
+            do {
+                if fileManager.fileExists(atPath: destFileURL.path) {
+                    try fileManager.removeItem(at: destFileURL)
                 }
+                
+                try fileManager.copyItem(at: selectedFileURL, to: destFileURL)
+                
+                parent.selectedFile = destFileURL
+            } catch {
+                print(error.localizedDescription)
             }
         }
     }
