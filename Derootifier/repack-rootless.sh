@@ -5,6 +5,8 @@
 ### INFO: Repacks deb as rootless with iphoneos-arm64 arch, moves legacy tweak dir to
 ###       new directory, and resigns. Does not do any further modification.
 
+### Modified by haxi0
+
 export TMPDIR=/var/mobile/.Derootifier
 
 set -e
