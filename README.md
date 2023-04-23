@@ -2,3 +2,6 @@
 
 # Derootifier
 "Derootifies" jailbreak .deb files to support Fugu15 Max otherwise known as Dopamine. Install with TrollStore.
+
+# License
+AuxiliaryExecute - https://github.com/Lakr233/AuxiliaryExecute/blob/main/LICENSE (MIT)
