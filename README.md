@@ -5,3 +5,4 @@
 
 # License
 AuxiliaryExecute - https://github.com/Lakr233/AuxiliaryExecute/blob/main/LICENSE (MIT)
+FluidGradient - https://github.com/Cindori/FluidGradient/blob/main/LICENSE (MIT)
