@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DCF8E3429EA9E6F00D55A37 /* DerootifierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCF8E3329EA9E6F00D55A37 /* DerootifierApp.swift */; };
+		6DCF8E3629EA9E6F00D55A37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCF8E3529EA9E6F00D55A37 /* ContentView.swift */; };
+		6DCF8E3829EA9E7100D55A37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DCF8E3729EA9E7100D55A37 /* Assets.xcassets */; };
+		6DCF8E3B29EA9E7100D55A37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DCF8E3A29EA9E7100D55A37 /* Preview Assets.xcassets */; };
+		6DCF8E4329EA9E8A00D55A37 /* AuxiliaryExecute in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCF8E4229EA9E8A00D55A37 /* AuxiliaryExecute */; };
+		6DCF8E4529EA9F5D00D55A37 /* repack-rootless.sh in Resources */ = {isa = PBXBuildFile; fileRef = 6DCF8E4429EA9F5D00D55A37 /* repack-rootless.sh */; };
+		6DCF8E4829EAB03000D55A37 /* Alert++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCF8E4729EAB03000D55A37 /* Alert++.swift */; };
+		6DE2082729EB2E940053E93D /* ShellScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2082629EB2E940053E93D /* ShellScript.swift */; };
+		6DE2082A29EB30EF0053E93D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2082929EB30EF0053E93D /* GradientView.swift */; };
+		6DE2082C29EB3E990053E93D /* TintedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2082B29EB3E990053E93D /* TintedButton.swift */; };
+		6DE2082E29EB3F230053E93D /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2082D29EB3F230053E93D /* MaterialView.swift */; };
+		6DE2083229EB46850053E93D /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2083129EB46850053E93D /* DocumentPicker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6DCF8E3029EA9E6F00D55A37 /* Derootifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Derootifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCF8E3329EA9E6F00D55A37 /* DerootifierApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerootifierApp.swift; sourceTree = "<group>"; };
+		6DCF8E3529EA9E6F00D55A37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6DCF8E3729EA9E7100D55A37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DCF8E3A29EA9E7100D55A37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6DCF8E4429EA9F5D00D55A37 /* repack-rootless.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "repack-rootless.sh"; sourceTree = "<group>"; };
+		6DCF8E4729EAB03000D55A37 /* Alert++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert++.swift"; sourceTree = "<group>"; };
+		6DE2082629EB2E940053E93D /* ShellScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellScript.swift; sourceTree = "<group>"; };
+		6DE2082929EB30EF0053E93D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		6DE2082B29EB3E990053E93D /* TintedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintedButton.swift; sourceTree = "<group>"; };
+		6DE2082D29EB3F230053E93D /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		6DE2083129EB46850053E93D /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DCF8E2D29EA9E6F00D55A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCF8E4329EA9E8A00D55A37 /* AuxiliaryExecute in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DCF8E2729EA9E6F00D55A37 = {
+			isa = PBXGroup;
+			children = (
+				6DCF8E3229EA9E6F00D55A37 /* Derootifier */,
+				6DCF8E3129EA9E6F00D55A37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DCF8E3129EA9E6F00D55A37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DCF8E3029EA9E6F00D55A37 /* Derootifier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DCF8E3229EA9E6F00D55A37 /* Derootifier */ = {
+			isa = PBXGroup;
+			children = (
+				6DE2082829EB30DC0053E93D /* Views */,
+				6DE2082529EB2E7B0053E93D /* Support */,
+				6DCF8E4629EAB02300D55A37 /* Extensions */,
+				6DCF8E4429EA9F5D00D55A37 /* repack-rootless.sh */,
+				6DCF8E3329EA9E6F00D55A37 /* DerootifierApp.swift */,
+				6DCF8E3729EA9E7100D55A37 /* Assets.xcassets */,
+				6DCF8E3929EA9E7100D55A37 /* Preview Content */,
+			);
+			path = Derootifier;
+			sourceTree = "<group>";
+		};
+		6DCF8E3929EA9E7100D55A37 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6DCF8E3A29EA9E7100D55A37 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6DCF8E4629EAB02300D55A37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6DCF8E4729EAB03000D55A37 /* Alert++.swift */,
+				6DE2082B29EB3E990053E93D /* TintedButton.swift */,
+				6DE2082D29EB3F230053E93D /* MaterialView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6DE2082529EB2E7B0053E93D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				6DE2082629EB2E940053E93D /* ShellScript.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		6DE2082829EB30DC0053E93D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DCF8E3529EA9E6F00D55A37 /* ContentView.swift */,
+				6DE2082929EB30EF0053E93D /* GradientView.swift */,
+				6DE2083129EB46850053E93D /* DocumentPicker.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DCF8E2F29EA9E6F00D55A37 /* Derootifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DCF8E3E29EA9E7100D55A37 /* Build configuration list for PBXNativeTarget "Derootifier" */;
+			buildPhases = (
+				6DCF8E2C29EA9E6F00D55A37 /* Sources */,
+				6DCF8E2D29EA9E6F00D55A37 /* Frameworks */,
+				6DCF8E2E29EA9E6F00D55A37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Derootifier;
+			packageProductDependencies = (
+				6DCF8E4229EA9E8A00D55A37 /* AuxiliaryExecute */,
+			);
+			productName = Derootifier;
+			productReference = 6DCF8E3029EA9E6F00D55A37 /* Derootifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DCF8E2829EA9E6F00D55A37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6DCF8E2F29EA9E6F00D55A37 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 6DCF8E2B29EA9E6F00D55A37 /* Build configuration list for PBXProject "Derootifier" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DCF8E2729EA9E6F00D55A37;
+			packageReferences = (
+				6DCF8E4129EA9E8A00D55A37 /* XCRemoteSwiftPackageReference "AuxiliaryExecute" */,
+			);
+			productRefGroup = 6DCF8E3129EA9E6F00D55A37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DCF8E2F29EA9E6F00D55A37 /* Derootifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DCF8E2E29EA9E6F00D55A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCF8E4529EA9F5D00D55A37 /* repack-rootless.sh in Resources */,
+				6DCF8E3B29EA9E7100D55A37 /* Preview Assets.xcassets in Resources */,
+				6DCF8E3829EA9E7100D55A37 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DCF8E2C29EA9E6F00D55A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCF8E3629EA9E6F00D55A37 /* ContentView.swift in Sources */,
+				6DE2082C29EB3E990053E93D /* TintedButton.swift in Sources */,
+				6DE2082729EB2E940053E93D /* ShellScript.swift in Sources */,
+				6DE2082A29EB30EF0053E93D /* GradientView.swift in Sources */,
+				6DE2083229EB46850053E93D /* DocumentPicker.swift in Sources */,
+				6DCF8E4829EAB03000D55A37 /* Alert++.swift in Sources */,
+				6DE2082E29EB3F230053E93D /* MaterialView.swift in Sources */,
+				6DCF8E3429EA9E6F00D55A37 /* DerootifierApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6DCF8E3C29EA9E7100D55A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DCF8E3D29EA9E7100D55A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DCF8E3F29EA9E7100D55A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Derootifier/Preview Content\"";
+				DEVELOPMENT_TEAM = A999YUQPG2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.haxi0.Derootifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DCF8E4029EA9E7100D55A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Derootifier/Preview Content\"";
+				DEVELOPMENT_TEAM = A999YUQPG2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.haxi0.Derootifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DCF8E2B29EA9E6F00D55A37 /* Build configuration list for PBXProject "Derootifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DCF8E3C29EA9E7100D55A37 /* Debug */,
+				6DCF8E3D29EA9E7100D55A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DCF8E3E29EA9E7100D55A37 /* Build configuration list for PBXNativeTarget "Derootifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DCF8E3F29EA9E7100D55A37 /* Debug */,
+				6DCF8E4029EA9E7100D55A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6DCF8E4129EA9E8A00D55A37 /* XCRemoteSwiftPackageReference "AuxiliaryExecute" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Lakr233/AuxiliaryExecute";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6DCF8E4229EA9E8A00D55A37 /* AuxiliaryExecute */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DCF8E4129EA9E8A00D55A37 /* XCRemoteSwiftPackageReference "AuxiliaryExecute" */;
+			productName = AuxiliaryExecute;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6DCF8E2829EA9E6F00D55A37 /* Project object */;
+}
