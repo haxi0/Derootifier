@@ -5,11 +5,9 @@
 ### INFO: Repacks deb as rootless with iphoneos-arm64 arch, moves legacy tweak dir to
 ###       new directory, and resigns. Does not do any further modification.
 
-export TMPDIR=/tmp
+export TMPDIR=/var/mobile/.Derootifier
 
 set -e
-
-/var/jb/basebin/jbctl rebuild_trustcache
 
 if ! type dpkg-deb >/dev/null 2>&1; then
 	echo "Please install dpkg-deb."
@@ -89,7 +87,7 @@ find "$TEMPDIR_NEW" -type f | while read -r file; do
   fi
 done
 
-fakeroot dpkg-deb -Zzstd -b "$TEMPDIR_NEW" "/var/jb/var/mobile/.Derootifier/$(grep Package: "$TEMPDIR_NEW"/DEBIAN/control | cut -f2 -d ' ')"_"$(grep Version: "$TEMPDIR_NEW"/DEBIAN/control | cut -f2 -d ' ')"_"$(grep Architecture: "$TEMPDIR_NEW"/DEBIAN/control | cut -f2 -d ' ')".deb
+dpkg-deb -Zzstd -b "$TEMPDIR_NEW" "/var/mobile/.Derootifier/$(grep Package: "$TEMPDIR_NEW"/DEBIAN/control | cut -f2 -d ' ')"_"$(grep Version: "$TEMPDIR_NEW"/DEBIAN/control | cut -f2 -d ' ')"_"$(grep Architecture: "$TEMPDIR_NEW"/DEBIAN/control | cut -f2 -d ' ')".deb
 
 ### Real script end
 
