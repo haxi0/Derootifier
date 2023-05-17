@@ -56,7 +56,7 @@ struct ContentView: View {
             .ignoresSafeArea()
             .onAppear {
                 if firstLaunch {
-                    UIApplication.shared.alert(title: "Warning", body: "Please make sure the following packages are installed: dpkg-deb, file, fakeroot, odcctools, ldid (from Procursus).")
+                    UIApplication.shared.alert(title: "Warning", body: "Please make sure the following packages are installed: dpkg, file, fakeroot, odcctools, ldid (from Procursus).")
                     firstLaunch = false
                 }
 #if !targetEnvironment(simulator)
