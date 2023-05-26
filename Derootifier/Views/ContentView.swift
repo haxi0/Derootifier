@@ -25,8 +25,16 @@ struct ContentView: View {
                 
                 if let selectedFile = selectedFile {
                     Button("Convert .deb") {
-                        outputAux = repackDeb(scriptPath: scriptPath, debURL: selectedFile)
-                        UIApplication.shared.alert(title: "Converting...", body: outputAux, withButton: !outputAux.isEmpty)
+                        UIApplication.shared.alert(title: "Converting...", body: "Please wait", withButton: false)
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                            outputAux = repackDeb(scriptPath: scriptPath, debURL: selectedFile)
+                            UIApplication.shared.dismissAlert(animated: false)
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                UIApplication.shared.confirmAlert(title: "Done", body: outputAux, onOK: {
+                                    checkFileMngrs()
+                                }, noCancel: false)
+                            }
+                        }
                     }
                     .buttonStyle(TintedButton(color: .white, fullwidth: true))
                 }
