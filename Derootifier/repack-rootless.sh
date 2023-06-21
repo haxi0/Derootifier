@@ -90,7 +90,7 @@ find "$TEMPDIR_NEW" -type f | while read -r file; do
 done
 
 dpkg-deb -Zzstd -b "$TEMPDIR_NEW" "/var/mobile/.Derootifier/$(grep Package: "$TEMPDIR_NEW"/DEBIAN/control | cut -f2 -d ' ')"_"$(grep Version: "$TEMPDIR_NEW"/DEBIAN/control | cut -f2 -d ' ')"_"$(grep Architecture: "$TEMPDIR_NEW"/DEBIAN/control | cut -f2 -d ' ')".deb
-rm -rf "/var/mobile/.Derootifier/$(grep Package: "$TEMPDIR_NEW"/DEBIAN/control | cut -f2 -d ' ')"_"$(grep Version: "$TEMPDIR_NEW"/DEBIAN/control | cut -f2 -d ' ')"_iphoneos-arm.deb
+ls /var/mobile/.Derootifier/ |  grep -v -E '*iphoneos-arm64*' | xargs rm -r
 
 ### Real script end
 
